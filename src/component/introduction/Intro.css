@@ -1,0 +1,184 @@
+.intro{
+    width: 98vw;
+    height: 98vh;
+    display: flex;
+    /* border: 2px solid red; */
+    display: flex;
+    align-items: center;
+    /* position: absolute; */
+    top: 0;
+    z-index: -1;
+    /* margin-top: -70px; */
+    overflow-x: hidden;
+
+}
+.intro11{
+    width: 450px;
+    height: 380px;
+    /* border: 1px solid red; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+.creative{
+    font-size: 30px;
+    text-align: center;
+}
+.creative1{
+    margin-top: 5px;
+    margin-bottom: 0px;
+}
+.believe{
+    padding: 5px;
+}
+.believe1{
+    font-size: 20px;
+}
+.start-call{
+    /* border: 1px solid blue; */
+    height: 50px;
+    width: 100%;
+    margin-bottom: 5px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.start{
+    /* border: 2px solid black; */
+    background-color: blue;
+    color: #fff;
+    width: 170px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    cursor: pointer;
+
+}
+.start1{
+  font-size: 20px;
+  font-weight: 600;
+}
+.call{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* border: 1px solid red; */
+    height:  50px;
+    width: 210px;
+    justify-content: space-between;
+}
+.call1{
+    font-size: 18px;
+    color: crimson;
+    font-weight: 500;
+}
+.call2{
+    font-size: 16px;
+}
+.intro1{
+    /* flex: 5; */
+    width: 50%;
+    height: 98vh;
+    /* border: 2px solid blue; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.intro2{
+    /* flex: 5; */
+    width: 50%;
+    height: 100%;
+    /* border: 2px solid green; */
+    /* background-color: crimson; */
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    /* --webkit-clip-path: polygon(27% 0, 100% 0, 100% 100%, 0 100%);
+    clip-path: polygon(27% 0, 100% 0, 100% 100%, 0 100%); */
+    
+    
+}
+.intro2::before{
+    content: "";
+    position: absolute;
+    width: 50%;
+    height: 100%;
+    /* border: 2px solid green; */
+    background-color: crimson;
+    /* --webkit-clip-path: polygon(27% 0, 100% 0, 100% 100%, 0 100%);
+    clip-path: polygon(27% 0, 100% 0, 100% 100%, 0 100%); */
+    --webkit-clip-path: polygon(27% 0, 100% 0, 100% 100%, 0 100%);
+    clip-path: polygon(27% 0, 100% 0, 100% 100%, 0 140%);
+    z-index: -1;
+
+}
+.girl{
+    width: 500px;
+    height: 650px;
+     /* border: 1px solid red; */
+
+}
+
+@media only screen and (max-width: 800px) {
+    .creative {
+         
+        font-size: 25px;
+    }
+    .believe1{
+        font-size: 16px;
+        margin-left: 4px;
+    }
+
+}
+@media only screen and (max-width: 800px) {
+    .call{
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 520px) {
+    .believe{
+        display: none;
+        
+    }
+    .creative{
+        margin-left: 3px;
+        font-size: 15px;
+    }
+    .intro11{
+        justify-content: space-around;
+    }
+    .girl {
+        width: 370px;
+        height: 570px;
+}
+}
+@media only screen and (max-width: 450px) {
+    .intro2{
+        display: none;
+    }
+    .intro{
+        justify-content: center;
+        align-items: center;
+
+    }
+    .intro::before{
+    width: 100%;
+    height: 100%;
+        content: "";
+        position: absolute;
+        background: url("/public/assests/girl3.png") no-repeat center/cover;
+        z-index: -1;
+        background-color:   crimson;
+        opacity: 0.6;
+
+    }
+    .believe{
+        display: block;
+        font-size: 19px;
+        font-weight: 500;
+    }
+}
